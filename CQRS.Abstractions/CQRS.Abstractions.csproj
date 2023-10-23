@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<AssemblyName>MarcUnterseh.$(MSBuildProjectName)</AssemblyName>
+	<Title>CQRS.Abstractions</Title>
+	<Authors>Marc Unterseh</Authors>
+	<Description>Abstractions for classes used to handle queries and commands.</Description>
+	<PackageProjectUrl>https://github.com/MarcUnterseh/CQRS</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/MarcUnterseh/CQRS</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MarcUnterseh.ResultWrapper.Abstractions" Version="1.0.0" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+
+</Project>

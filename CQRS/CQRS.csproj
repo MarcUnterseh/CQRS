@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<AssemblyName>MarcUnterseh.$(MSBuildProjectName)</AssemblyName>
+	<Title>CQRS</Title>
+	<Authors>Marc Unterseh</Authors>
+	<Description>Classes used to handle queries and commands.</Description>
+	<PackageProjectUrl>https://github.com/MarcUnterseh/CQRS</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/MarcUnterseh/CQRS</RepositoryUrl>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<WarningLevel>9999</WarningLevel>
+		<NoWarn />
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<WarningLevel>9999</WarningLevel>
+		<NoWarn />
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MarcUnterseh.ResultWrapper" Version="1.0.0" />
+	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CQRS.Abstractions\CQRS.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>
